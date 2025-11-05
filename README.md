@@ -1,2 +1,26 @@
 # Repositorio-Atividade
-Repositorio criado para atividade de extensão
+Repositorio criado para atividade de extensao
+# Atividade de Extensao Dev+Git
+
+## Nome do ecommerce
+XXXXXXXXXXXXx
+
+## Integrantes
+Integrante lider 1: Kauany Paula Da Silva
+Integrante 2:Pedro Rocha Reis
+Integrante 3: Aline Rodrigues Lorkievicz
+Integrante 4: Gustavo Lins
+Integrante 5: Henrique Gustavo Da Costa Lopes
+
+
+## Tecnologias Utilizadas
+Git e GitHub Desktop
+JavaScript (opcional)
+HTML
+CSS
+Python ou PHP (opcional, para simular backend)
+Render (hospedagem gratuita)
+
+
+## Tipo de Licenca
+Uso livre
