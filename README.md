@@ -14,10 +14,10 @@
 
 ## Tecnologias Utilizadas
 * Git e GitHub Desktop
-* JavaScript 
+* JavaScript (Talvez)
 * HTML
 * CSS
-* Python ou PHP 
+* PHP 
 * Render 
 
 ## Tipo de Licenca
