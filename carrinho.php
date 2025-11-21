@@ -68,7 +68,8 @@ function calcularTotal()
 
     // soma preço × quantidade
     foreach ($itens as $item) {
-        $total += $item['subtotal'];
+       $total += floatval($item['subtotal']);
+
     }
 
     return $total;
