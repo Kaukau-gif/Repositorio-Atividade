@@ -1,4 +1,5 @@
 <?php
+
 // carrinho usando sessão
 
 session_start();
@@ -24,7 +25,6 @@ function adicionarAoCarrinho($idProduto, $quantidade = 1)
 // remove item
 function removerDoCarrinho($idProduto)
 {
-    // tira do carrinho
     if (isset($_SESSION['carrinho'][$idProduto])) {
         unset($_SESSION['carrinho'][$idProduto]);
     }
@@ -41,10 +41,10 @@ function listarCarrinho()
 {
     $itens = [];
 
-    // pega infos no banco
     foreach ($_SESSION['carrinho'] as $id => $qtd) {
 
         $con = conectarBanco();
+        $id = intval($id);
 
         $sql = "SELECT * FROM produtos WHERE id = $id";
         $res = mysqli_query($con, $sql);
@@ -64,12 +64,11 @@ function listarCarrinho()
 function calcularTotal()
 {
     $total = 0;
-    $itens = listarCarrinho();
+    $items = listarCarrinho();
 
-    // soma preço × quantidade
-    foreach ($itens as $item) {
-       $total += floatval($item['subtotal']);
-
+    foreach ($items as $item) {
+        // substituição correta:
+        $total += floatval($item['subtotal']);
     }
 
     return $total;
