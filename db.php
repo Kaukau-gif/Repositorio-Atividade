@@ -15,3 +15,22 @@ function conectarBanco() {
 
     return $conexao;
 }
+
+// Função que busca produtos no banco
+function buscarProdutos() {
+    $con = conectarBanco();
+
+    $sql = "SELECT * FROM produtos";
+
+    $resultado = mysqli_query($con, $sql);
+
+    $produtos = [];
+
+    if ($resultado) {
+        while ($linha = mysqli_fetch_assoc($resultado)) {
+            $produtos[] = $linha;
+        }
+    }
+
+    return $produtos;
+}
