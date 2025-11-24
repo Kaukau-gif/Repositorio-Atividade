@@ -23,30 +23,30 @@
 ## Tipo de Licenca
 -*`USO LIVRE`*-
 
-##Listagem e Carrinho
+## Listagem e Carrinho
 
-O sistema possui duas partes principais: listagem de produtos e carrinho de compras.
+**O sistema possui duas partes principais: listagem de produtos e carrinho de compras.**
 
-##Listagem de Produtos
+## Listagem de Produtos
 
-Os produtos são carregados do banco de dados.
+1. Os produtos são carregados do banco de dados.
 
-Cada item aparece com seu nome, preço e um botão para adicionar ao carrinho.
+2. Cada item aparece com seu nome, preço e um botão para adicionar ao carrinho.
 
-A listagem serve como ponto de escolha para o usuário.
+3. A listagem serve como ponto de escolha para o usuário.
 
-##Carrinho de Compras
+## Carrinho de Compras
 
-O carrinho é armazenado na sessão, permitindo que o usuário navegue sem perder os itens.
+1. O carrinho é armazenado na sessão, permitindo que o usuário navegue sem perder os itens.
 
-Ao adicionar um produto:
+2. Ao adicionar um produto:
 
-Se ele já estiver no carrinho, a quantidade aumenta.
+3. Se ele já estiver no carrinho, a quantidade aumenta.
 
-Se não estiver, ele é incluído com quantidade inicial.
+4. Se não estiver, ele é incluído com quantidade inicial.
 
-O sistema também calcula o valor total com base nos itens e quantidades.
+5. O sistema também calcula o valor total com base nos itens e quantidades.
 
-##Objetivo
+## Objetivo
 
-Oferecer uma estrutura simples onde o usuário possa visualizar produtos, selecionar o que deseja e manter tudo organizado no carrinho.
+**Oferecer uma estrutura simples onde o usuário possa visualizar produtos, selecionar o que deseja e manter tudo organizado no carrinho.**
