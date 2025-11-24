@@ -35,9 +35,9 @@ function buscarProdutos() {
     $conn->close();
     return $produtos;
 }
-?>
-// PARTE 02
-<?php
+
+
+
 
 /*
 

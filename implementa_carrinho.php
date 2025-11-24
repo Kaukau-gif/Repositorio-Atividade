@@ -33,8 +33,7 @@ if ($id_produto) {
     echo "ID inválido!";
 }
 ?>
-
-//PARTE 02
+//Parte 2
 
 <?php
 /*
