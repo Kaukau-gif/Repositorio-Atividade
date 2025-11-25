@@ -29,23 +29,23 @@
 
 ## Listagem de Produtos
 
-1. Os produtos são carregados do banco de dados.
+* Os produtos são carregados do banco de dados.
 
-2. Cada item aparece com seu nome, preço e um botão para adicionar ao carrinho.
+* Cada item aparece com seu nome, preço e um botão para adicionar ao carrinho.
 
-3. A listagem serve como ponto de escolha para o usuário.
+* A listagem serve como ponto de escolha para o usuário.
 
 ## Carrinho de Compras
 
-1. O carrinho é armazenado na sessão, permitindo que o usuário navegue sem perder os itens.
+* O carrinho é armazenado na sessão, permitindo que o usuário navegue sem perder os itens.
 
-2. Ao adicionar um produto:
+* Ao adicionar um produto:
 
-3. Se ele já estiver no carrinho, a quantidade aumenta.
+* Se ele já estiver no carrinho, a quantidade aumenta.
 
-4. Se não estiver, ele é incluído com quantidade inicial.
+* Se não estiver, ele é incluído com quantidade inicial.
 
-5. O sistema também calcula o valor total com base nos itens e quantidades.
+* O sistema também calcula o valor total com base nos itens e quantidades.
 
 ## Objetivo
 
