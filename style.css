@@ -57,3 +57,10 @@ header a {
   color: white;
   text-decoration: none;
 }
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
