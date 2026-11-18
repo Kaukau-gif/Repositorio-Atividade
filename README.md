@@ -1,52 +1,58 @@
-# Repositorio-Atividade
-#### Repositorio criado para atividade de extensao
-#### -*Atividade de Extensao Dev+Git*-
+# 🛒 NexCode: e-commerce em PHP
 
-## Nome do ecommerce
-   -*NexCode*-
+E-commerce simples com **listagem de produtos** e **carrinho de compras**, desenvolvido em equipe na atividade de extensão *Dev+Git* da Unicesumar. O foco foi praticar desenvolvimento web com PHP e trabalho colaborativo com Git e GitHub.
 
-## Integrantes
-*  1 *Líder*: Kauany Paula Da Silva
-*  2: Pedro Rocha Reis
-*  3: Aline Rodrigues Lorkievicz
-*  4: Gustavo Lins
-*  5: Henrique Gustavo Da Costa Lopes
+## Funcionalidades
 
-## Tecnologias Utilizadas
-* Git e GitHub Desktop
-* JavaScript (Talvez)
-* HTML
-* CSS
-* PHP 
-* Render 
+- **Listagem de produtos** carregada do banco de dados, com nome, preço e botão para adicionar ao carrinho
+- **Carrinho na sessão:** o usuário navega pelo site sem perder os itens
+- Ao adicionar um produto que já está no carrinho, a **quantidade aumenta**; se é novo, entra com quantidade inicial
+- **Cálculo automático do total** com base nos itens e quantidades
+- Tela de **login**
 
-## Tipo de Licenca
--*`USO LIVRE`*-
+## Tecnologias
 
-## Listagem e Carrinho
+- PHP
+- HTML e CSS
+- MySQL (mysqli)
+- Git, GitHub Desktop e GitHub Actions (workflow de CI)
+- Render (configuração de deploy em `render.yaml`)
 
-**O sistema possui duas partes principais: listagem de produtos e carrinho de compras.**
+## Estrutura
 
-## Listagem de Produtos
+```
+frontend/   páginas: listagem (index), carrinho e login
+backend/    conexão com o banco, busca de produtos e cálculo do carrinho
+css/        estilos
+render.yaml configuração de deploy no Render
+```
 
-* Os produtos são carregados do banco de dados.
+## Como executar localmente
 
-* Cada item aparece com seu nome, preço e um botão para adicionar ao carrinho.
+Requer PHP 8 ou mais recente.
 
-* A listagem serve como ponto de escolha para o usuário.
+```bash
+php -S localhost:8000
+```
 
-## Carrinho de Compras
+Depois, abra `http://localhost:8000/frontend/` no navegador. Crie um banco MySQL e ajuste os dados de conexão em `backend/db.php`.
 
-* O carrinho é armazenado na sessão, permitindo que o usuário navegue sem perder os itens.
+## Equipe
 
-* Ao adicionar um produto:
+| Integrante | Papel |
+|---|---|
+| **Kauany Paula da Silva** | Líder da equipe |
+| Pedro Rocha Reis | Desenvolvimento |
+| Aline Rodrigues Lorkievicz | Desenvolvimento |
+| Gustavo Lins | Desenvolvimento |
+| Henrique Gustavo da Costa Lopes | Desenvolvimento |
 
-* Se ele já estiver no carrinho, a quantidade aumenta.
+## O que aprendi
 
-* Se não estiver, ele é incluído com quantidade inicial.
+- Organizar o trabalho de uma equipe com branches, commits e Git
+- Separar frontend e backend em PHP
+- Usar sessão para manter o estado do usuário
 
-* O sistema também calcula o valor total com base nos itens e quantidades.
+## Licença
 
-## Objetivo
-
-**Oferecer uma estrutura simples onde o usuário possa visualizar produtos, selecionar o que deseja e manter tudo organizado no carrinho.**
+Uso livre.
